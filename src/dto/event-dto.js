@@ -1,4 +1,4 @@
-import { eventType } from "../enum/eventType";
+import { eventType } from "../enum/eventType.js";
 
 export class eventDto {
     type;

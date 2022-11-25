@@ -1,6 +1,6 @@
 import express from "express";
-import { EventController } from "./Controllers/events-controller";
-import { eventDto } from "./dto/event-dto";
+import { EventController } from "./controllers/events-controller.js";
+import { eventDto } from "./dto/event-dto.js";
 
 const app = express();
 
@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 
 app.post("/event", (req, res) => {
     console.log("req.body", req.body);
+    EventController
     EventController.trigger(new eventDto(req.body));
 
     res.status(200).send({
