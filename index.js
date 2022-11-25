@@ -11,5 +11,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen(PORT, async () => {
-    console.log("crakitos server api listens on PORT", PORT);
+    console.log("crakitos-server-api listens on PORT", PORT);
 })
