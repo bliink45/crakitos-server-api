@@ -1,4 +1,6 @@
 import express from "express";
+import { EventController } from "./Controllers/events-controller";
+import { eventDto } from "./dto/event-dto";
 
 const app = express();
 
@@ -11,7 +13,9 @@ app.get("/", (req, res) => {
 })
 
 app.post("/event", (req, res) => {
-    console.log(req);
+    console.log("req.body", req.body);
+    EventController.trigger(new eventDto(req.body));
+
     res.status(200).send({
         message: "You triggered an event.",
     })
