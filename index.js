@@ -10,6 +10,13 @@ app.get("/", (req, res) => {
     })
 })
 
+app.post("/event", (req, res) => {
+    console.log(req);
+    res.status(200).send({
+        message: "You triggered an event.",
+    })
+})
+
 app.listen(PORT, async () => {
     console.log("crakitos-server-api listens on PORT", PORT);
 })
