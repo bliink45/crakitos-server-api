@@ -2,6 +2,7 @@
   "name": "crakitos-server-api",
   "version": "1.0.0",
   "description": "",
+  "type":"module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/bliink45/crakitos-server-api/issues"
   },
-  "homepage": "https://github.com/bliink45/crakitos-server-api#readme"
+  "homepage": "https://github.com/bliink45/crakitos-server-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
