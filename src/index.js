@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 })
 
 app.post("/event", async (req, res) => {
+    console.log(req.body)
     EventController.trigger(new eventDto(req.body));
 
     return res.status(200).send({
