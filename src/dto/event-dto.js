@@ -6,15 +6,14 @@ export class eventDto {
 
     constructor(v) {
         this.type = parseInt(v.type);
+        this.data = v.data;
         
         switch(this.type) {
             case eventType.START:
-                this.data = { ip: v.data.ip };
                 break;
             case eventType.SHUTDOWN:
                 break;
             case eventType.REBOOT:
-                this.data = { ip: v.data.ip };
                 break;
             case eventType.CRASH:
                 break;
