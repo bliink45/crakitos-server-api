@@ -4,7 +4,6 @@ import { api } from "../data/api.js";
 export class EventController {
     static async trigger(event) {
         console.log("event: ", event);
-        event.data.name = "crakitos-server-api";
 
         /** TODO
          * Should trigger several request to others api
