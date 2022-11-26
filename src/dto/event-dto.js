@@ -9,12 +9,12 @@ export class eventDto {
         
         switch(this.type) {
             case eventType.START:
-                this.data = { id: this.data.id };
+                this.data = { ip: v.data.ip };
                 break;
             case eventType.SHUTDOWN:
                 break;
             case eventType.REBOOT:
-                this.data = { id: this.data.id };
+                this.data = { ip: v.data.ip };
                 break;
             case eventType.CRASH:
                 break;
