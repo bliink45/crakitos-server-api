@@ -16,14 +16,11 @@ export class EventController {
 
             const data = {
                 type: 0,
-                data: {
-                    type: 0,
-                    data: event.data,
-                }
+                data: event,
             };
 
             promiseList.push(
-                axios.post(api.url + "/minecraft", data)
+                axios.post(api.url + "/minecraft/event", data)
             );
         })
 
