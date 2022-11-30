@@ -9,7 +9,7 @@ export class EventController {
          * Should trigger several request to others api
          */
 
-        let triggerApiList = [ api["bliink45-bot"], api["crakito-bot"] ];
+        let triggerApiList = [ api["crakito-bot"] ];
         let promiseList = [];
 
         triggerApiList.forEach(api => {
