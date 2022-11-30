@@ -1,9 +1,12 @@
 import express from "express";
+import dotenv from "dotenv";
 import { EventController } from "./controllers/events-controller.js";
 import { eventDto } from "./dto/event-dto.js";
 
-const app = express();
+// Load .env file
+dotenv.config()
 
+const app = express();
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;

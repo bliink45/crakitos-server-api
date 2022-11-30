@@ -5,3 +5,4 @@ package-lock.json
 .replit
 replit.nix
 .idea
+.env
